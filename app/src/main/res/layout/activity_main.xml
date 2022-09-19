@@ -4,16 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_img"
+    android:background="@drawable/back_img2"
     tools:context=".MainActivity">
 
     <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/top" />
+
+    <ImageView
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_ifam2"/>
+        android:layout_above="@+id/text"
+        android:src="@drawable/restore" />
 
     <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:autoSizeTextType="none"
+        android:gravity="center"
+        android:text="Those \n Effected by Incarceration"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:autoSizeTextType="none"
+        android:text="Indomitable Families Affected by Incarceration, Inc. was founded be Dr. Crystal DeBerry in February 2014. The numbers of one goal of IFAM is to help restore and empower those affected by Incarceration."
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btn_web"
@@ -21,9 +56,9 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
         android:autoSizeTextType="none"
-        android:text="IFAM is a non-profit program designed to develop and address educational and biopsychosocial components of men and women with convictions and thier families."
+        android:text="IFAM is a non-profit program designed to develop and address educational and biopsychosocial components of men and women with convictions and their families. The outreach program is notable for benefiting those who have a loved one incarcerated by alleviating environmental and psychosocial stressors."
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/btn_web"
@@ -36,6 +71,6 @@
         android:elevation="10dp"
         android:padding="6dp"
         android:text="View Website"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp" />
 </RelativeLayout>
